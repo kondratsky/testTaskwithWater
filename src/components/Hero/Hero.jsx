@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './Hero.css'
+import backgroundImg from '/background.png'
 
 function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -12,7 +13,10 @@ function Hero() {
     <section className="hero" id="home">
       <div className="hero-background">
         <div className="hero-bg-gradient"></div>
-        <div className="water-decoration"></div>
+        <div
+          className="water-decoration"
+          style={{ backgroundImage: `url(${backgroundImg})` }}
+        ></div>
       </div>
 
       <div className={`hero-content ${isVisible ? 'visible' : ''}`}>

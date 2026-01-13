@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import './Services.css'
 
+import emergencyImg from '/services/emergency-repairs.png'
+import drainImg from '/services/drain-cleaning.png'
+import waterHeatersImg from '/services/water-heaters.png'
+import leakDetectionImg from '/services/leak-detection.png'
+
 const EmergencyIcon = () => (
   <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
     <ellipse cx="60" cy="100" rx="50" ry="15" fill="url(#waterGrad1)" opacity="0.6"/>
@@ -86,25 +91,25 @@ const services = [
   {
     id: 1,
     title: 'Emergency Repairs',
-    image: '/services/emergency-repairs.png',
+    image: emergencyImg,
     icon: EmergencyIcon,
   },
   {
     id: 2,
     title: 'Drain Cleaning',
-    image: '/services/drain-cleaning.png',
+    image: drainImg,
     icon: DrainIcon,
   },
   {
     id: 3,
     title: 'Water Heaters',
-    image: '/services/water-heaters.png',
+    image: waterHeatersImg,
     icon: WaterHeaterIcon,
   },
   {
     id: 4,
     title: 'Leak Detection & More',
-    image: '/services/leak-detection.png',
+    image: leakDetectionImg,
     icon: LeakDetectionIcon,
   },
 ]
